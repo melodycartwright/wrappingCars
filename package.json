@@ -1,0 +1,16 @@
+{
+  "name": "wrappingcars",
+  "version": "1.0.0",
+  "description": "Website to showcase a buisness that does custom made car wrapping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {}
+}
