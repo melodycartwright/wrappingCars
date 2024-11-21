@@ -1,0 +1,140 @@
+/* Custom Styles */
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 600px;
+}
+
+#hero .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Service Section */
+.service-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.service-card .btn {
+    margin-top: 10px;
+}
+
+/* Partner Section */
+#partners .partner-logo img {
+    max-width: 150px;
+    transition: transform 0.3s ease;
+}
+
+#partners .partner-logo img:hover {
+    transform: scale(1.1);
+}
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000;
+    /* Black background like your image */
+    color: #fff;
+    /* White text */
+}
+
+.logo img {
+    height: 50px;
+    /* Adjust logo height */
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    margin-left: 20px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #fff;
+    /* White menu links */
+    font-weight: bold;
+}
+
+.menu-list a:hover {
+    color: #ff0000;
+    /* Change color on hover (e.g., red) */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .menu-list {
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        display: none;
+        /* Hide the menu by default */
+    }
+
+    .menu-list.active {
+        display: block;
+        /* Show menu when active */
+    }
+
+    .menu-list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+}
+
+/* Show hamburger menu on smaller screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        position: relative;
+    }
+}

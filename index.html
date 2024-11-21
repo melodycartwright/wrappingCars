@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Solution</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav class="menu">
+            <ul class="menu-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Hero Section with Carousel -->
+    <section id="hero" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/purple.jpg" class="d-block w-100" alt="Hero Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1920x600" class="d-block w-100" alt="Hero Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1920x600" class="d-block w-100" alt="Hero Image 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    <!-- Service Links Grid -->
+    <section id="services" class="container mt-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="service-card text-center p-4 border">
+                    <h4>Service 1</h4>
+                    <p>Link to the service details page</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4 border">
+                    <h4>Service 2</h4>
+                    <p>Link to the service details page</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4 border">
+                    <h4>Service 3</h4>
+                    <p>Link to the service details page</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section id="partners" class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Partners</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="partner-logo text-center">
+                        <img src="https://via.placeholder.com/150" class="img-fluid" alt="Partner 1">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="partner-logo text-center">
+                        <img src="https://via.placeholder.com/150" class="img-fluid" alt="Partner 2">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="partner-logo text-center">
+                        <img src="https://via.placeholder.com/150" class="img-fluid" alt="Partner 3">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="partner-logo text-center">
+                        <img src="https://via.placeholder.com/150" class="img-fluid" alt="Partner 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
