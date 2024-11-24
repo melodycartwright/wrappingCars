@@ -1,14 +1,28 @@
-/* Custom Styles */
-
-/* Hero Section */
 #hero {
     position: relative;
     height: 600px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #hero .carousel-item img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+/* Ensure Body/Margin Conflicts are Addressed */
+body,
+html {
+    margin: 0;
+    /* Remove default browser margins */
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling caused by oversized content */
 }
 
 /* Service Section */
